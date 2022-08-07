@@ -6,7 +6,6 @@ const {
   validObjectBody,
 } = require('../middlewares/character.middleware');
 
-
 route.get('/All-Characters', controllerCharacters.findAllCharactersController);
 route.get(
   '/Characters-By-Id/:id',

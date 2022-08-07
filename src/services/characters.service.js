@@ -16,7 +16,10 @@ const createCharacterService = async (newCharacter) => {
 };
 
 const updateCharacterService = async (id, characterEdited) => {
-  const characterUpdate = await MarioKart.findByIdAndUpdate(id,characterEdited);
+  const characterUpdate = await MarioKart.findByIdAndUpdate(
+    id,
+    characterEdited,
+  );
   return characterUpdate;
 };
 

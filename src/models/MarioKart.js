@@ -5,11 +5,11 @@ const MarioKartSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  typeCar:{
+  typeCar: {
     type: String,
     required: true,
   },
-  photo:{
+  photo: {
     type: String,
     required: true,
   },
