@@ -24,7 +24,7 @@ const createCharacterController = async (req,res) => {
 const updateCharacterController = async (req,res) => {
 const idParams = req.params.id;
 const characterEditi = req.body;
-const chosenCharacter = await personagensService.updateCharacterService(idParams,characterEditi);
+const chosenCharacter = await charactersService.updateCharacterService(idParams,characterEditi);
 res.send(chosenCharacter);
 };
 
